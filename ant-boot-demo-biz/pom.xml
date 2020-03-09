@@ -36,8 +36,9 @@
             <artifactId>ant-boot-starter-bekit</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.antframework.boot</groupId>
-            <artifactId>ant-boot-starter-config</artifactId>
+            <groupId>org.antframework.configcenter</groupId>
+            <artifactId>configcenter-spring-boot-starter</artifactId>
+            <version>1.6.0.RELEASE</version>
         </dependency>
     </dependencies>
 </project>

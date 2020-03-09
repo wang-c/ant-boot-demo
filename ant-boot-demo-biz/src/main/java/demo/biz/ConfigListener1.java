@@ -1,4 +1,4 @@
-/* 
+/*
  * 作者：钟勋 (e-mail:zhongxunking@163.com)
  */
 
@@ -8,11 +8,11 @@
  */
 package demo.biz;
 
+import org.antframework.boot.core.Contexts;
+import org.antframework.boot.env.listener.ChangedProperty;
+import org.antframework.boot.env.listener.annotation.ConfigListener;
+import org.antframework.boot.env.listener.annotation.ListenConfigChanged;
 import org.antframework.common.util.tostring.ToString;
-import org.antframework.configcenter.client.core.ChangedProperty;
-import org.antframework.configcenter.spring.context.Contexts;
-import org.antframework.configcenter.spring.listener.annotation.ConfigListener;
-import org.antframework.configcenter.spring.listener.annotation.ListenConfigChanged;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

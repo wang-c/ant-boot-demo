@@ -8,22 +8,20 @@
  */
 package demo.biz;
 
-import org.antframework.configcenter.client.Config;
-import org.antframework.configcenter.spring.ConfigsContexts;
-import org.antframework.ids.UID;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
-
-import javax.annotation.PostConstruct;
 
 /**
  * biz层配置
  */
 @Configuration
 public class BizConfiguration {
+    @Value("${aa:${aa2:abc}}")
+    private String aa;
 
-    @PostConstruct
-    public void init() {
-        String id = UID.newId();
-        Config commonConfig = ConfigsContexts.getConfig("common");
+    @Value("${bb}")
+    public void setBb(int bb) {
+        int b = bb;
     }
+
 }
